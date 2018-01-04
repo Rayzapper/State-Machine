@@ -1,3 +1,10 @@
-﻿  Game.cpp
+﻿  UnitBehavior.cpp
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(704): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(705): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(738): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(741): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(768): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\rasmus\documents\visual studio 2015\projects\state-machine\finitestatemachine\finitestatemachine\unitbehavior.cpp(772): warning C4305: '+=': truncation from 'double' to 'float'
   FiniteStateMachine.vcxproj -> C:\Users\Rasmus\Documents\Visual Studio 2015\Projects\State-Machine\FiniteStateMachine\x64\Debug\FiniteStateMachine.exe
   FiniteStateMachine.vcxproj -> C:\Users\Rasmus\Documents\Visual Studio 2015\Projects\State-Machine\FiniteStateMachine\x64\Debug\FiniteStateMachine.pdb (Partial PDB)
