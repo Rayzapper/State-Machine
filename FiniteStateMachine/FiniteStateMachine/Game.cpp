@@ -1,5 +1,4 @@
 #include "Game.h"
-#include "InputManager.h"
 #include <iostream>
 
 Game::Game()
@@ -130,14 +129,10 @@ void Game::Run()
 			{
 				int newWidth = event.size.width, newHeight = event.size.height;
 			}
-			if (event.type == sf::Event::MouseWheelMoved)
-				InputManager::GetInstance().SetMouseWheelValue(event.mouseWheelScroll.wheel);
 		}
 
 		if (focus)
 		{
-			InputManager::GetInstance().Update();
-
 			mouseScreenPosition = sf::Mouse::getPosition(*m_Window);
 
 			// --------------------Update--------------------
@@ -150,16 +145,12 @@ void Game::Run()
 
 			// End frame
 			m_Window->display();
-
-			InputManager::GetInstance().Clear();
 		}
 		else
 		{
 			sf::Time time = sf::milliseconds(100);
 			sf::sleep(time);
 
-			InputManager::GetInstance().Update();
-
 			mouseScreenPosition = sf::Mouse::getPosition(*m_Window);
 
 			// --------------------Update--------------------
@@ -172,8 +163,6 @@ void Game::Run()
 
 			// End frame
 			m_Window->display();
-
-			InputManager::GetInstance().Clear();
 		}
 	}
 }
@@ -181,8 +170,6 @@ void Game::Run()
 void Game::Update(float dt, sf::Vector2i mousePosition)
 {
 	bool mouseClick, rightClick;
-	mouseClick = InputManager::GetInstance().GetInput(MOUSELEFTCLICK);
-	rightClick = InputManager::GetInstance().GetInput(MOUSERIGHTCLICK);
 	sf::Vector2f mouseWorldPosition = m_Window->mapPixelToCoords(mousePosition);
 
 	vector<sf::Vector2f> wolfPositions;
